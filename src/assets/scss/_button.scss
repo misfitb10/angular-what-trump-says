@@ -1,0 +1,21 @@
+/* === BUTTON NEXT QUOTE === */
+.btn__nextQuote {
+  display: inline-block;
+  border: 5px solid $muricaRed;
+  background-color: $muricaWhite;
+  color: $muricaRed;
+  font-size: $button-more-l;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding: 10px 15px;
+  transition: all 0.15s;
+
+  @include for-size(phone-only) {
+    font-size: $button-more-m;
+  }
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}

@@ -1,0 +1,24 @@
+/* === QUOTE === */
+.quote__container {
+  font-family: $font-stack;
+  color: $muricaWhite;
+  padding: 15px 0;
+  margin-bottom: 25px;
+
+  q {
+    display: block;
+    font-size: $quote-l;
+
+    @include for-size(phone-only) {
+      font-size: $quote-m;
+    }
+  }
+
+  cite {
+    font-size: $quote-author-l;
+
+    @include for-size(phone-only) {
+      font-size: $quote-author-m;
+    }
+  }
+}
