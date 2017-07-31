@@ -1,20 +1,39 @@
 /* === PAGE / CONTENT WRAPPER === */
+.page__wrapper {
+  @include for-size(phone-only) {
+    margin: 10px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .page__container {
   max-width: 800px;
   width: auto;
-  min-height: 300px;
   text-align: center;
-  border: 10px solid $muricaWhite;
+  border: 5px solid $muricaWhite;
   background-color: $muricaBlue;
-  padding: 50px;
-  margin: 30px auto auto;
-  position: relative;
+  padding: 25px;
 
-  @include for-size(desktop-up) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
+  @include for-size(tablet-portrait-up) {
+    border: 10px solid $muricaWhite;
+    padding: 50px;
+  }
+}
+
+q {
+  &:before {
+    content: '“';
+  }
+
+  &:after {
+    content: '”';
   }
 }

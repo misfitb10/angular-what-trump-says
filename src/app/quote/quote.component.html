@@ -1,0 +1,15 @@
+<div class="page__wrapper">
+  <main class="page__container">
+    <div class="stars"><span class="muricaRed">**********</span><span class="muricaWhite">**********</span><span class="muricaBlueer">**********</span></div>
+
+    <article class="quote__container">
+      <q>{{quote}}</q>
+      <div *ngIf="errorMessage" class="errorMessage">{{errorMessage}}</div>
+      <cite>Donald Trump</cite>
+    </article>
+
+    <a href="#" class="btn__nextQuote" (click)="getQuote()">HELL YEAH, GIMME ANOTHER QUOTE</a>
+
+    <div class="stars"><span class="muricaRed">**********</span><span class="muricaWhite">**********</span><span class="muricaBlueer">**********</span></div>
+  </main>
+</div>
